@@ -7,7 +7,8 @@ string name;
 int accountNo;
 vector<int> Account;
 public:
-   void create(){
+   // Create your Account
+   void create(){   
         cout << "Enter your name: " << endl;
         cin >> name;
         srand(time(nullptr));
@@ -20,7 +21,8 @@ public:
         Account.push_back(Ammount);
         cout << "Account has been created successfully.";
     }
-    void deposit(){
+   // Deposit Your Ammont
+    void deposit(){ 
         int accountNo1;
         int Ammount;
         cout << "Enter your account no: " << endl;
@@ -36,6 +38,7 @@ public:
             cout << "Ammount has been deposited succesfully." << endl;   
         }
     }
+   // Withdraw Your Balance
     void withdraw(){
         int accountNo1;
         cout << "Enter your account no: " << endl;
@@ -49,6 +52,7 @@ public:
             cout << "Ammount Withdrawing succesfully done." << endl;   
         }
     }
+   // Show your Balance
     void showBalance(){
         int sum=0;
         for(int i: Account){
